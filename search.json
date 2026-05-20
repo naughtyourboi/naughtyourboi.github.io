@@ -1,5 +1,19 @@
 [
   {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
+  },
+  {
+    "objectID": "notes.html",
+    "href": "notes.html",
+    "title": "",
+    "section": "",
+    "text": "Code"
+  },
+  {
     "objectID": "cv.html",
     "href": "cv.html",
     "title": "",
@@ -14,24 +28,10 @@
     "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
   },
   {
-    "objectID": "notes.html",
-    "href": "notes.html",
-    "title": "",
-    "section": "",
-    "text": "Code"
-  },
-  {
     "objectID": "projects.html",
     "href": "projects.html",
     "title": "",
     "section": "",
     "text": "Code"
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "About this site"
   }
 ]
