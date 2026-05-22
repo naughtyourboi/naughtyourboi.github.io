@@ -1,5 +1,9 @@
 /* ========== Hide Quarto auto-anchors ========== */
-.anchorjs-link { display: none !important; }
+.anchorjs-link, a.anchorjs-link,
+.anchor-section, a.anchor-section { display: none !important; }
+/* Keep anchor links inside project card titles */
+.project-card h3 .anchorjs-link, .project-card h3 a.anchorjs-link,
+.project-card h3 .anchor-section, .project-card h3 a.anchor-section { display: inline !important; }
 
 /* ========== Design Tokens ========== */
 :root {
@@ -365,19 +369,28 @@ nav.navbar {
     place-items: center;
     width: 36px;
     height: 36px;
-    border: 1px solid var(--line);
+    border: 1px solid transparent;
     border-radius: 8px;
-    color: var(--muted);
-    background: transparent;
+    color: #fff;
+    background: var(--accent);
     cursor: pointer;
     transition: all 0.18s ease;
     padding: 0;
 }
 
 .theme-toggle-btn:hover {
-    border-color: var(--line-strong);
-    color: var(--accent-strong);
-    background: color-mix(in srgb, var(--accent) 8%, transparent);
+    background: var(--accent-strong);
+    color: #fff;
+    border-color: transparent;
+}
+
+[data-theme="blue"] .theme-toggle-btn {
+    background: var(--blue);
+    color: #fff;
+}
+
+[data-theme="blue"] .theme-toggle-btn:hover {
+    background: var(--blue-strong);
 }
 
 /* ========== Eyebrow ========== */
