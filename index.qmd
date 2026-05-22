@@ -54,7 +54,7 @@ page-layout: full
       <img src="DSCF3706.JPG" alt="HsiangYu Tsai" class="hero-photo-img">
     </div>
 
-    <p class="hero-bio">I design distributed systems, GPU-accelerated kernels, and scalable ML pipelines — bridging academic rigor with production-grade engineering at USC and beyond.</p>
+    <p class="hero-bio">I turn data into production-grade AI systems — spanning ML pipelines, LLM applications, and GPU-accelerated computing.</p>
 
     <div class="education-list">
       <div class="edu-card">
@@ -76,7 +76,7 @@ page-layout: full
     <p class="hero-bio" style="margin-bottom: 32px;">Preparing for data engineering and ML systems roles. Champion of the 2024 AI Era Campus Smart Innovation Hackathon. Open to Summer 2026 opportunities.</p>
 
     <div class="cta-row">
-      <a href="#projects" class="button primary">View Projects ↓</a>
+      <a href="#ai-llms" class="button primary">View Projects ↓</a>
       <a href="#about" class="button">About Me</a>
       <a href="cv.qmd" class="button">Full CV</a>
     </div>
@@ -85,10 +85,10 @@ page-layout: full
   <!-- Right: Skills + Contact -->
   <div class="contact-panel">
     <div class="focus-board" id="focus-board-container">
-      <div>Data Science</div>
-      <div>Python</div>
-      <div>AI</div>
-      <div>ML</div>
+      <div>Machine Learning</div>
+      <div>LLMs</div>
+      <div>Big Data</div>
+      <div>GPU Computing</div>
     </div>
     <div class="contact-list">
       <a href="https://github.com/naughtyourboi" target="_blank"><i class="icon">⬡</i> github.com/naughtyourboi</a>
@@ -369,6 +369,15 @@ Focused on distributed data systems, GPU acceleration, and scalable ML pipelines
 
 </div>
 
+</section>
+
+<section style="margin-top: 80px; margin-bottom: 60px;">
+<div class="cv-cta reveal">
+  <div class="eyebrow" style="color: rgba(255,255,255,0.88);">&#8212; RÉSUMÉ</div>
+  <h2 style="color:#fff; font-family: Georgia, serif; font-size: clamp(1.8rem, 3.5vw, 2.6rem); margin: 12px 0 16px; text-shadow: 0 2px 12px rgba(0,0,0,0.18);">Want the full picture?</h2>
+  <p style="color: rgba(255,255,255,0.72); font-size: 1.08rem; max-width: 50ch; margin: 0 0 28px; line-height: 1.65;">See the complete breakdown of coursework, technical skills, and experience — all in one place.</p>
+  <a href="cv.qmd" class="button primary" style="font-size: 1rem; padding: 0 28px; min-height: 48px;">View Full CV →</a>
+</div>
 </section>
 
 ```{=html}
