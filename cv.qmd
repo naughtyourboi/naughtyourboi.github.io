@@ -1,0 +1,233 @@
+---
+title: ""
+page-layout: full
+---
+
+<div class="cv-page">
+
+<div class="eyebrow" style="margin-top: 44px;">CURRICULUM VITAE</div>
+
+# HsiangYu (Eric) Tsai {style="font-family: Georgia, serif; font-size: clamp(2rem, 5vw, 3.8rem); line-height: 1; margin: 0 0 6px; color: var(--ink);"}
+
+<p style="color: var(--muted); font-size: 0.95rem; margin-bottom: 48px;">
+Los Angeles, CA &nbsp;·&nbsp;
+<a href="mailto:basstsai2002@gmail.com">basstsai2002@gmail.com</a> &nbsp;·&nbsp;
+<a href="https://github.com/naughtyourboi" target="_blank">github.com/naughtyourboi</a> &nbsp;·&nbsp;
+<a href="https://linkedin.com/in/eric1313" target="_blank">linkedin.com/in/eric1313</a>
+</p>
+
+---
+
+<div class="cv-section">
+
+<h2 class="cv-section-title">Education</h2>
+
+<div class="cv-entry">
+<div class="cv-entry-header">
+<div>
+<h3>University of Southern California</h3>
+<span class="cv-org">Master of Applied Data Science</span>
+</div>
+<div class="cv-meta">
+<span>08/2025 – 05/2027</span>
+<span>Los Angeles, CA</span>
+</div>
+</div>
+<ul>
+<li><strong>Coursework:</strong> Scalable Data Mgmt (Spark, Hadoop), Parallel Computing (C++, CUDA), Applied ML (Scikit-learn, PyTorch), Data Mining</li>
+<li>Focus on distributed data systems, GPU acceleration, scalable ML pipelines, and performance-aware computation</li>
+</ul>
+</div>
+
+<div class="cv-entry">
+<div class="cv-entry-header">
+<div>
+<h3>Soochow University</h3>
+<span class="cv-org">B.B.A. in Data Science</span>
+</div>
+<div class="cv-meta">
+<span>09/2021 – 06/2025</span>
+<span>Taipei, Taiwan</span>
+</div>
+</div>
+<ul>
+<li>Strong foundation in algorithms, statistics, database systems, and machine learning theory</li>
+</ul>
+</div>
+
+</div>
+
+<div class="cv-section">
+
+<h2 class="cv-section-title">Skills</h2>
+
+<div class="skills-grid">
+<div class="skill-group">
+<strong>Languages</strong>
+<span>Python, SQL, C/C++, CUDA</span>
+</div>
+<div class="skill-group">
+<strong>ML & Data</strong>
+<span>Pandas, NumPy, Scikit-learn, PyTorch, Spark, Hadoop, Feature Engineering</span>
+</div>
+<div class="skill-group">
+<strong>Systems</strong>
+<span>Distributed Computing, GPU Programming, Parallel Algorithms, Memory Optimization, Profiling</span>
+</div>
+<div class="skill-group">
+<strong>Tools</strong>
+<span>Git, Docker, REST APIs, Linux, Flask</span>
+</div>
+</div>
+
+</div>
+
+<div class="cv-section">
+
+<h2 class="cv-section-title">Professional Experience</h2>
+
+<div class="cv-entry">
+<div class="cv-entry-header">
+<div>
+<h3>AI Systems Developer</h3>
+<span class="cv-org">Campus Smart Innovation Hackathon — Champion Team</span>
+</div>
+<div class="cv-meta">
+<span>2024</span>
+</div>
+</div>
+<ul>
+<li>Led 48-hour agile development of an AI-driven campus system; architected and integrated ML components</li>
+<li>Built working prototype and secured <strong>1st Place (Champion)</strong> by presenting technical design and business value to judges</li>
+<li>Coordinated team delivery under tight deadline, ensuring stable end-to-end deployment</li>
+</ul>
+</div>
+
+<div class="cv-entry">
+<div class="cv-entry-header">
+<div>
+<h3>Backend & System Developer</h3>
+<span class="cv-org">Beacon-Based Campus Navigation System</span>
+</div>
+<div class="cv-meta">
+<span>2024</span>
+</div>
+</div>
+<ul>
+<li>Developed Flask backend and routing algorithms for BLE navigation system serving <strong>200+ students</strong></li>
+<li>Reduced latency from seconds to milliseconds via database optimization; deployed for live campus usage</li>
+<li>Designed scalable API endpoints for real-time location queries</li>
+</ul>
+</div>
+
+</div>
+
+<div class="cv-section">
+
+<h2 class="cv-section-title">Selected Projects</h2>
+
+<div class="cv-entry">
+<div class="cv-entry-header">
+<div>
+<h3>High-Performance Parallel Computing System</h3>
+<span class="cv-org">C++ / CUDA</span>
+</div>
+<div class="cv-meta"><span>2025</span></div>
+</div>
+<ul>
+<li>Implemented CUDA kernels for matrix operations; applied shared-memory tiling to minimize global memory latency</li>
+<li>Achieved <strong>4× speedup</strong> over CPU baseline by optimizing warp divergence, coalescing, and occupancy via profiling</li>
+<li>Evaluated compute-to-memory ratio to identify and resolve architectural bottlenecks in parallel distribution</li>
+</ul>
+</div>
+
+<div class="cv-entry">
+<div class="cv-entry-header">
+<div>
+<h3>Distributed Data Processing Framework</h3>
+<span class="cv-org">Spark / Hadoop</span>
+</div>
+<div class="cv-meta"><span>2025</span></div>
+</div>
+<ul>
+<li>Built distributed Spark workflows (RDD/DataFrame) on multi-million row datasets; optimized joins and partitioning</li>
+<li>Reduced job runtime by <strong>30%</strong> via shuffle cost analysis; compared SQL/NoSQL performance under heavy workloads</li>
+<li>Evaluated scalability and query consistency across increasing data volumes</li>
+</ul>
+</div>
+
+<div class="cv-entry">
+<div class="cv-entry-header">
+<div>
+<h3>Machine Learning Pipeline Infrastructure</h3>
+<span class="cv-org">Python / Scikit-learn</span>
+</div>
+<div class="cv-meta"><span>2025</span></div>
+</div>
+<ul>
+<li>Designed modular ML workflow (ingestion, training, evaluation); implemented regularized models with stratified CV</li>
+<li>Improved F1-score by <strong>12%</strong> via feature selection and recursive elimination</li>
+<li>Conducted bias-variance diagnostics and evaluated ROC/AUC stability</li>
+</ul>
+</div>
+
+<div class="cv-entry">
+<div class="cv-entry-header">
+<div>
+<h3>Custom SQL/NoSQL Query Engine</h3>
+<span class="cv-org">Python</span>
+</div>
+<div class="cv-meta"><span>2025</span></div>
+</div>
+<ul>
+<li>Developed extensible query engine supporting filter/join/agg operations with modular CSV/JSON parsers</li>
+<li>Implemented chunk-based loading architecture reducing peak memory usage by <strong>70%</strong> on 1M+ rows</li>
+<li>Designed modular execution pipeline enabling scalable backend expansion</li>
+</ul>
+</div>
+
+</div>
+
+<div class="cv-section">
+
+<h2 class="cv-section-title">Awards & Certifications</h2>
+
+<div class="award-list">
+<div class="award-item">
+<span class="award-icon">🏆</span>
+<div>
+<strong>Champion</strong> — AI Era Campus Smart Innovation Hackathon (2024)
+</div>
+</div>
+<div class="award-item">
+<span class="award-icon">🥈</span>
+<div>
+<strong>Second Place</strong> — Innovation &amp; Integration Competition (2024)
+</div>
+</div>
+<div class="award-item">
+<span class="award-icon">☁️</span>
+<div>
+<strong>Microsoft Azure AI Fundamentals</strong> (AI-900)
+</div>
+</div>
+</div>
+
+</div>
+
+<div style="text-align: center; margin-top: 16px; padding-top: 32px; border-top: 1px solid var(--line);">
+<a href="mailto:basstsai2002@gmail.com" class="button primary">Get in Touch</a>
+</div>
+
+</div>
+
+```{=html}
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  document.addEventListener('mousemove', function (e) {
+    document.body.style.setProperty('--cx', e.clientX + 'px');
+    document.body.style.setProperty('--cy', e.clientY + 'px');
+  });
+});
+</script>
+```

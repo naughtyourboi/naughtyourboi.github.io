@@ -1,5 +1,91 @@
 ---
-title: "About"
+title: ""
+page-layout: full
 ---
 
-About this site
+<div class="about-page">
+
+<div class="eyebrow" style="margin-top: 44px;">ABOUT</div>
+
+<div class="about-hero">
+<img src="DSCF3706.JPG" alt="Eric Tsai" class="about-avatar">
+<div class="about-intro">
+<h1>HsiangYu (Eric) Tsai</h1>
+<p>MS Applied Data Science @ USC &nbsp;·&nbsp; Los Angeles, CA</p>
+<p style="margin-top: 8px;">
+<a href="mailto:basstsai2002@gmail.com">basstsai2002@gmail.com</a> &nbsp;·&nbsp;
+<a href="https://github.com/naughtyourboi" target="_blank">GitHub</a> &nbsp;·&nbsp;
+<a href="https://linkedin.com/in/eric1313" target="_blank">LinkedIn</a>
+</p>
+</div>
+</div>
+
+<div class="about-card">
+<h2>Who I Am</h2>
+<p>
+I'm a data scientist and systems engineer currently pursuing my Master of Applied Data Science at the University of Southern California. I grew up in Taipei, where I completed my undergraduate degree in Data Science at Soochow University, and moved to Los Angeles in 2025 to continue building at the intersection of high-performance computing and machine learning.
+</p>
+<p>
+My work sits at the edge of data science and systems engineering — I care deeply about performance, scalability, and the gap between a working proof-of-concept and something that holds up in production. Whether it's writing CUDA kernels, tuning Spark jobs, or designing modular ML pipelines, I try to understand not just what works, but why it works at scale.
+</p>
+</div>
+
+<div class="about-card">
+<h2>What I'm Working On</h2>
+<p>
+At USC, I'm focused on distributed data systems, GPU acceleration, scalable ML pipelines, and performance-aware computation. I'm actively building toward data engineering and ML systems roles, and I'm open to Summer 2026 internship and research opportunities where I can contribute to real infrastructure challenges.
+</p>
+<p>
+Outside of coursework, I'm drawn to projects where careful system design creates measurable impact — the kind of work where a 4× speedup or a 70% memory reduction isn't an accident, but the result of deeply understanding how hardware and software interact.
+</p>
+</div>
+
+<div class="about-card">
+<h2>Technical Interests</h2>
+<div class="skills-grid" style="margin-top: 0;">
+<div class="skill-group">
+<strong>High-Performance Computing</strong>
+<span>CUDA, GPU kernels, memory coalescing, warp optimization, parallel algorithms</span>
+</div>
+<div class="skill-group">
+<strong>Distributed Systems</strong>
+<span>Apache Spark, Hadoop, RDD/DataFrame, shuffle optimization, partitioning</span>
+</div>
+<div class="skill-group">
+<strong>Machine Learning</strong>
+<span>Pipeline design, model evaluation, feature engineering, bias-variance analysis</span>
+</div>
+<div class="skill-group">
+<strong>Systems & Infra</strong>
+<span>Python, C/C++, Docker, REST APIs, Linux, Git, Flask</span>
+</div>
+</div>
+</div>
+
+<div class="about-card">
+<h2>Beyond the Code</h2>
+<p>
+When I'm not thinking about data pipelines, I enjoy photography — the cover image on this site was taken on my Fujifilm. I'm interested in the craft of visual storytelling, which in some ways isn't so different from data visualization: both are about finding the most honest and clear way to show something true.
+</p>
+<p>
+I'm also drawn to cities and the way they work. Moving from Taipei to Los Angeles has given me a new appreciation for how infrastructure — physical and digital — shapes daily life in ways most people never notice.
+</p>
+</div>
+
+<div style="text-align: center; margin-top: 32px;">
+<a href="projects.qmd" class="button primary">View My Projects</a>
+<a href="cv.qmd" class="button" style="margin-left: 10px;">View CV</a>
+</div>
+
+</div>
+
+```{=html}
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  document.addEventListener('mousemove', function (e) {
+    document.body.style.setProperty('--cx', e.clientX + 'px');
+    document.body.style.setProperty('--cy', e.clientY + 'px');
+  });
+});
+</script>
+```

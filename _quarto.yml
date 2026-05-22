@@ -2,30 +2,26 @@ project:
   type: website
 
 website:
-  title: "Eric Tsai" 
-  description: "Data Scientist & AI Enthusiast"
-  
+  title: "Eric Tsai"
+  description: "MS Applied Data Science @ USC | Distributed Systems & ML"
+
   navbar:
-    background: primary
-    search: true
+    search: false
     left:
-      - text: "Home"
+      - text: "Eric Tsai"
         href: index.qmd
+    right:
       - text: "Projects"
         href: projects.qmd
       - text: "Notes"
         href: notes.qmd
-    right:
-      - text: "Resume"
+      - text: "CV"
         href: cv.qmd
       - icon: github
         href: https://github.com/naughtyourboi
 
 format:
   html:
-    theme:
-      light: cosmo
-      dark: cyborg
-    toc: true
-    code-fold: true
-    code-tools: true
+    theme: cosmo
+    css: styles.css
+    toc: false

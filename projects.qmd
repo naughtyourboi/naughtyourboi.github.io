@@ -1,0 +1,141 @@
+---
+title: ""
+page-layout: full
+---
+
+```{=html}
+<div class="bg-words" aria-hidden="true">
+  <span style="left:8%;top:12%">kernel</span>
+  <span style="left:55%;top:6%">gradient</span>
+  <span style="left:81%;top:10%">CUDA</span>
+  <span style="left:25%;top:28%">Spark</span>
+  <span style="left:70%;top:35%">partition</span>
+  <span style="left:12%;top:55%">shuffle</span>
+  <span style="left:48%;top:60%">batch</span>
+  <span style="left:88%;top:52%">epoch</span>
+  <span style="left:35%;top:75%">pipeline</span>
+  <span style="left:65%;top:80%">alloc</span>
+  <span style="left:5%;top:80%">thread</span>
+  <span style="left:42%;top:88%">warp</span>
+</div>
+```
+
+<div style="animation: pageIn 0.45s ease both;">
+
+<div class="eyebrow" style="margin-top: 44px;">ALL PROJECTS</div>
+
+# Projects {style="font-family: Georgia, serif; font-size: clamp(2.5rem, 6vw, 5rem); line-height: 0.95; margin: 0 0 16px; color: var(--ink);"}
+
+<p class="section-desc" style="margin-bottom: 52px;">
+Production-grade systems, ML infrastructure, and full-stack applications — built at USC and beyond.
+</p>
+
+---
+
+<div class="eyebrow">SYSTEMS & HIGH-PERFORMANCE COMPUTING</div>
+
+<div class="project-cards-container" style="margin-bottom: 52px;">
+
+<div class="project-card">
+<div class="card-category">C++ · CUDA · 2025</div>
+<h3>High-Performance Parallel Computing System</h3>
+<p>Implemented CUDA kernels for matrix operations; applied shared-memory tiling to minimize global memory latency. Achieved <strong>4× speedup</strong> over CPU baseline by optimizing warp divergence, memory coalescing, and occupancy via profiling. Evaluated compute-to-memory ratio to identify and resolve architectural bottlenecks in parallel distribution.</p>
+<div class="tag-row">
+<span class="tag-badge">C++</span>
+<span class="tag-badge">CUDA</span>
+<span class="tag-badge">GPU Profiling</span>
+<span class="tag-badge">Parallel Algorithms</span>
+<span class="tag-badge">Memory Optimization</span>
+</div>
+</div>
+
+<div class="project-card">
+<div class="card-category">Spark · Hadoop · 2025</div>
+<h3>Distributed Data Processing Framework</h3>
+<p>Built distributed Spark workflows (RDD/DataFrame) on multi-million row datasets; optimized joins and partitioning strategies. Reduced job runtime by <strong>30%</strong> via shuffle cost analysis; compared SQL/NoSQL performance under heavy workloads. Evaluated scalability and query consistency across increasing data volumes.</p>
+<div class="tag-row">
+<span class="tag-badge">Spark</span>
+<span class="tag-badge">Hadoop</span>
+<span class="tag-badge">RDD</span>
+<span class="tag-badge">DataFrame</span>
+<span class="tag-badge">SQL</span>
+<span class="tag-badge">NoSQL</span>
+</div>
+</div>
+
+</div>
+
+<div class="eyebrow">MACHINE LEARNING & DATA SCIENCE</div>
+
+<div class="project-cards-container" style="margin-bottom: 52px;">
+
+<div class="project-card">
+<div class="card-category">Python · Scikit-learn · 2025</div>
+<h3>Machine Learning Pipeline Infrastructure</h3>
+<p>Designed modular ML workflow covering ingestion, training, and evaluation; implemented regularized models with stratified cross-validation. Improved F1-score by <strong>12%</strong> via feature selection and recursive elimination. Conducted bias-variance diagnostics and evaluated ROC/AUC stability across model variants.</p>
+<div class="tag-row">
+<span class="tag-badge">Python</span>
+<span class="tag-badge">Scikit-learn</span>
+<span class="tag-badge">PyTorch</span>
+<span class="tag-badge">Feature Engineering</span>
+<span class="tag-badge">Cross-Validation</span>
+</div>
+</div>
+
+<div class="project-card">
+<div class="card-category">Python · 2025</div>
+<h3>Custom SQL/NoSQL Query Engine</h3>
+<p>Developed extensible query engine supporting filter, join, and aggregation operations with modular CSV/JSON parsers. Implemented chunk-based loading architecture reducing peak memory usage by <strong>70%</strong> on 1M+ row datasets. Designed modular execution pipeline enabling scalable backend expansion.</p>
+<div class="tag-row">
+<span class="tag-badge">Python</span>
+<span class="tag-badge">SQL</span>
+<span class="tag-badge">NoSQL</span>
+<span class="tag-badge">Memory Optimization</span>
+</div>
+</div>
+
+</div>
+
+<div class="eyebrow">FULL-STACK & APPLIED AI</div>
+
+<div class="project-cards-container" style="margin-bottom: 52px;">
+
+<div class="project-card">
+<div class="card-category">Flask · BLE · 2024</div>
+<h3>Beacon-Based Campus Navigation System</h3>
+<p>Developed Flask backend and routing algorithms for a BLE-based indoor navigation system serving <strong>200+ students</strong>. Reduced location query latency from seconds to milliseconds via database optimization. Designed scalable API endpoints for real-time location queries; deployed for live campus usage.</p>
+<div class="tag-row">
+<span class="tag-badge">Flask</span>
+<span class="tag-badge">BLE</span>
+<span class="tag-badge">REST API</span>
+<span class="tag-badge">Python</span>
+<span class="tag-badge">Database</span>
+</div>
+</div>
+
+<div class="project-card" style="border-color: color-mix(in srgb, var(--accent) 30%, var(--line));">
+<div class="card-category">AI Systems · Champion · 2024</div>
+<h3>AI-Driven Campus Smart Innovation System</h3>
+<p>Led 48-hour agile development of an AI-driven campus system as part of the <strong>Champion team</strong> at the 2024 AI Era Campus Smart Innovation Hackathon. Architected and integrated ML components; built working prototype and secured 1st Place by presenting technical design and business value to judges.</p>
+<div class="tag-row">
+<span class="tag-badge">AI/ML</span>
+<span class="tag-badge">System Design</span>
+<span class="tag-badge">Hackathon</span>
+<span class="tag-badge">🏆 Champion</span>
+</div>
+</div>
+
+</div>
+
+</div>
+
+```{=html}
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  document.addEventListener('mousemove', function (e) {
+    document.body.style.setProperty('--cx', e.clientX + 'px');
+    document.body.style.setProperty('--cy', e.clientY + 'px');
+  });
+});
+</script>
+```
