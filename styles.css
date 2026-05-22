@@ -1,3 +1,6 @@
+/* ========== Hide Quarto auto-anchors ========== */
+.anchorjs-link { display: none !important; }
+
 /* ========== Design Tokens ========== */
 :root {
     color-scheme: light;
@@ -37,6 +40,40 @@
     --line-strong: rgba(240, 236, 255, 0.2);
     --shadow: 0 22px 60px rgba(0, 0, 0, 0.5);
     --shadow-soft: 0 12px 28px rgba(0, 0, 0, 0.35);
+}
+
+/* ========== Blue Theme ========== */
+:root[data-theme="blue"] {
+    --ink: #0c1628;
+    --muted: #485a80;
+    --accent: #4a6fd8;
+    --accent-strong: #3458c0;
+    --warm: #e55d1a;
+    --gold: #e55d1a;
+    --blue: #4a6fd8;
+    --blue-strong: #3458c0;
+    --paper: #e4eaff;
+    --paper-2: #d8e2ff;
+    --card: rgba(236, 242, 255, 0.93);
+    --line: rgba(20, 50, 140, 0.1);
+    --line-strong: rgba(20, 50, 140, 0.2);
+    --shadow: 0 22px 54px rgba(15, 40, 120, 0.2);
+    --shadow-soft: 0 12px 28px rgba(15, 40, 120, 0.12);
+}
+
+html[data-theme="blue"] body {
+    background:
+        radial-gradient(ellipse 58% 44% at 102% 100%,
+            #c84020 0%, #e06030 18%, #f09060 40%, transparent 60%),
+        radial-gradient(ellipse 88% 72% at 42% 50%,
+            #1030b8 0%, #1e44d0 26%, #3a62ea 54%, transparent 78%),
+        linear-gradient(150deg, #c2d0ff 0%, #8eaaff 32%, #4e6ef0 62%, #2036cc 100%);
+    background-attachment: fixed;
+}
+
+html[data-theme="blue"] body::after {
+    background: radial-gradient(600px at var(--cx, -999px) var(--cy, -999px),
+        color-mix(in srgb, var(--warm) 11%, transparent), transparent 68%);
 }
 
 /* ========== Base Reset ========== */
@@ -321,6 +358,26 @@ nav.navbar {
     border-color: var(--line-strong);
     color: var(--ink);
     background: color-mix(in srgb, var(--card) 80%, transparent);
+}
+
+.theme-toggle-btn {
+    display: grid;
+    place-items: center;
+    width: 36px;
+    height: 36px;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    color: var(--muted);
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.18s ease;
+    padding: 0;
+}
+
+.theme-toggle-btn:hover {
+    border-color: var(--line-strong);
+    color: var(--accent-strong);
+    background: color-mix(in srgb, var(--accent) 8%, transparent);
 }
 
 /* ========== Eyebrow ========== */
