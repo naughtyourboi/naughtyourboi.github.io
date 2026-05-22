@@ -2,36 +2,71 @@
   {
     "objectID": "about.html",
     "href": "about.html",
-    "title": "About",
+    "title": "\nHsiangYu (Eric) Tsai\n",
     "section": "",
-    "text": "About this site"
+    "text": "ABOUT\n\n\n\n\n\n\nMS Applied Data Science @ USC  ·  Los Angeles, CA\n\n\nbasstsai2002@gmail.com  ·  GitHub  ·  LinkedIn\n\n\n\n\n\nWho I Am\n\n\nI’m a data scientist and systems engineer currently pursuing my Master of Applied Data Science at the University of Southern California. I grew up in Taipei, where I completed my undergraduate degree in Data Science at Soochow University, and moved to Los Angeles in 2025 to continue building at the intersection of high-performance computing and machine learning.\n\n\nMy work sits at the edge of data science and systems engineering — I care deeply about performance, scalability, and the gap between a working proof-of-concept and something that holds up in production. Whether it’s writing CUDA kernels, tuning Spark jobs, or designing modular ML pipelines, I try to understand not just what works, but why it works at scale.\n\n\n\n\nWhat I’m Working On\n\n\nAt USC, I’m focused on distributed data systems, GPU acceleration, scalable ML pipelines, and performance-aware computation. I’m actively building toward data engineering and ML systems roles, and I’m open to Summer 2026 internship and research opportunities where I can contribute to real infrastructure challenges.\n\n\nOutside of coursework, I’m drawn to projects where careful system design creates measurable impact — the kind of work where a 4× speedup or a 70% memory reduction isn’t an accident, but the result of deeply understanding how hardware and software interact.\n\n\n\n\nTechnical Interests\n\n\n\nHigh-Performance Computing CUDA, GPU kernels, memory coalescing, warp optimization, parallel algorithms\n\n\nDistributed Systems Apache Spark, Hadoop, RDD/DataFrame, shuffle optimization, partitioning\n\n\nMachine Learning Pipeline design, model evaluation, feature engineering, bias-variance analysis\n\n\nSystems & Infra Python, C/C++, Docker, REST APIs, Linux, Git, Flask\n\n\n\n\n\nBeyond the Code\n\n\nWhen I’m not thinking about data pipelines, I enjoy photography — the cover image on this site was taken on my Fujifilm. I’m interested in the craft of visual storytelling, which in some ways isn’t so different from data visualization: both are about finding the most honest and clear way to show something true.\n\n\nI’m also drawn to cities and the way they work. Moving from Taipei to Los Angeles has given me a new appreciation for how infrastructure — physical and digital — shapes daily life in ways most people never notice.\n\n\n\nView My Projects View CV"
   },
   {
     "objectID": "notes.html",
     "href": "notes.html",
-    "title": "",
+    "title": "Notes",
     "section": "",
-    "text": "Code"
+    "text": "我的第一篇測試筆記\n\n\n\nTest\n\nQuarto\n\n\n\n這是一段簡短的描述，會顯示在卡片上喔！\n\n\n\n\n\n\nMay 20, 2026\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "cv.html",
     "href": "cv.html",
-    "title": "",
+    "title": "HsiangYu (Eric) Tsai",
     "section": "",
-    "text": "Code"
+    "text": "CURRICULUM VITAE\n\n\nHsiangYu (Eric) Tsai\n\nLos Angeles, CA  ·  basstsai2002@gmail.com  ·  github.com/naughtyourboi  ·  linkedin.com/in/eric1313\n\n\n\n\nEducation\n\n\n\n\n\nUniversity of Southern California\n\nMaster of Applied Data Science\n\n\n08/2025 – 05/2027 Los Angeles, CA\n\n\n\n\nCoursework: Scalable Data Mgmt (Spark, Hadoop), Parallel Computing (C++, CUDA), Applied ML (Scikit-learn, PyTorch), Data Mining\n\n\nFocus on distributed data systems, GPU acceleration, scalable ML pipelines, and performance-aware computation\n\n\n\n\n\n\n\nSoochow University\n\nB.B.A. in Data Science\n\n\n09/2021 – 06/2025 Taipei, Taiwan\n\n\n\n\nStrong foundation in algorithms, statistics, database systems, and machine learning theory\n\n\n\n\n\n\nSkills\n\n\n\nLanguages Python, SQL, C/C++, CUDA\n\n\nML & Data Pandas, NumPy, Scikit-learn, PyTorch, Spark, Hadoop, Feature Engineering\n\n\nSystems Distributed Computing, GPU Programming, Parallel Algorithms, Memory Optimization, Profiling\n\n\nTools Git, Docker, REST APIs, Linux, Flask\n\n\n\n\n\nProfessional Experience\n\n\n\n\n\nAI Systems Developer\n\nCampus Smart Innovation Hackathon — Champion Team\n\n\n2024\n\n\n\n\nLed 48-hour agile development of an AI-driven campus system; architected and integrated ML components\n\n\nBuilt working prototype and secured 1st Place (Champion) by presenting technical design and business value to judges\n\n\nCoordinated team delivery under tight deadline, ensuring stable end-to-end deployment\n\n\n\n\n\n\n\nBackend & System Developer\n\nBeacon-Based Campus Navigation System\n\n\n2024\n\n\n\n\nDeveloped Flask backend and routing algorithms for BLE navigation system serving 200+ students\n\n\nReduced latency from seconds to milliseconds via database optimization; deployed for live campus usage\n\n\nDesigned scalable API endpoints for real-time location queries\n\n\n\n\n\n\nSelected Projects\n\n\n\n\n\nHigh-Performance Parallel Computing System\n\nC++ / CUDA\n\n\n2025\n\n\n\n\nImplemented CUDA kernels for matrix operations; applied shared-memory tiling to minimize global memory latency\n\n\nAchieved 4× speedup over CPU baseline by optimizing warp divergence, coalescing, and occupancy via profiling\n\n\nEvaluated compute-to-memory ratio to identify and resolve architectural bottlenecks in parallel distribution\n\n\n\n\n\n\n\nDistributed Data Processing Framework\n\nSpark / Hadoop\n\n\n2025\n\n\n\n\nBuilt distributed Spark workflows (RDD/DataFrame) on multi-million row datasets; optimized joins and partitioning\n\n\nReduced job runtime by 30% via shuffle cost analysis; compared SQL/NoSQL performance under heavy workloads\n\n\nEvaluated scalability and query consistency across increasing data volumes\n\n\n\n\n\n\n\nMachine Learning Pipeline Infrastructure\n\nPython / Scikit-learn\n\n\n2025\n\n\n\n\nDesigned modular ML workflow (ingestion, training, evaluation); implemented regularized models with stratified CV\n\n\nImproved F1-score by 12% via feature selection and recursive elimination\n\n\nConducted bias-variance diagnostics and evaluated ROC/AUC stability\n\n\n\n\n\n\n\nCustom SQL/NoSQL Query Engine\n\nPython\n\n\n2025\n\n\n\n\nDeveloped extensible query engine supporting filter/join/agg operations with modular CSV/JSON parsers\n\n\nImplemented chunk-based loading architecture reducing peak memory usage by 70% on 1M+ rows\n\n\nDesigned modular execution pipeline enabling scalable backend expansion\n\n\n\n\n\n\nAwards & Certifications\n\n\n\n🏆\n\nChampion — AI Era Campus Smart Innovation Hackathon (2024)\n\n\n\n🥈\n\nSecond Place — Innovation & Integration Competition (2024)\n\n\n\n☁️\n\nMicrosoft Azure AI Fundamentals (AI-900)\n\n\n\n\n\nGet in Touch"
   },
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "cd portfolio",
+    "title": "HsiangYuTsai",
     "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+    "text": "ET\n      Eric Tsai\n    \n    \n      About\n      AI & LLMs\n      ML & Analysis\n      Big Data\n      Systems\n      CV"
+  },
+  {
+    "objectID": "index.html#who-i-am",
+    "href": "index.html#who-i-am",
+    "title": "HsiangYuTsai",
+    "section": "Who I Am",
+    "text": "Who I Am"
+  },
+  {
+    "objectID": "index.html#artificial-intelligence-llms",
+    "href": "index.html#artificial-intelligence-llms",
+    "title": "HsiangYuTsai",
+    "section": "Artificial Intelligence & LLMs",
+    "text": "Artificial Intelligence & LLMs\n\nRAG pipelines, LLM-powered applications, and semantic NLP systems — from PDF-grounded chatbots to self-hosted Llama 3 group chat."
+  },
+  {
+    "objectID": "index.html#machine-learning-data-analysis",
+    "href": "index.html#machine-learning-data-analysis",
+    "title": "HsiangYuTsai",
+    "section": "Machine Learning & Data Analysis",
+    "text": "Machine Learning & Data Analysis\n\nFrom competition-grade recommendation engines to statistical regression and medical classification — rigorous model engineering across domains."
+  },
+  {
+    "objectID": "index.html#big-data-distributed-systems",
+    "href": "index.html#big-data-distributed-systems",
+    "title": "HsiangYuTsai",
+    "section": "Big Data & Distributed Systems",
+    "text": "Big Data & Distributed Systems\n\nStreaming algorithms, large-scale graph analytics, and memory-efficient clustering — built from scratch on Apache Spark RDD under real resource constraints."
+  },
+  {
+    "objectID": "index.html#systems-infrastructure",
+    "href": "index.html#systems-infrastructure",
+    "title": "HsiangYuTsai",
+    "section": "Systems & Infrastructure",
+    "text": "Systems & Infrastructure\n\nHardware-level GPU optimization, filesystem emulation, and end-to-end data engineering pipelines — systems built close to the metal."
   },
   {
     "objectID": "projects.html",
     "href": "projects.html",
-    "title": "",
+    "title": "Projects",
     "section": "",
-    "text": "Code"
+    "text": "kernel\n  gradient\n  CUDA\n  Spark\n  partition\n  shuffle\n  batch\n  epoch\n  pipeline\n  alloc\n  thread\n  warp\n\n\n\nALL PROJECTS\n\n\nProjects\n\nProduction-grade systems, ML infrastructure, and full-stack applications — built at USC and beyond.\n\n\n\nSYSTEMS & HIGH-PERFORMANCE COMPUTING\n\n\n\n\nC++ · CUDA · 2025\n\n\nHigh-Performance Parallel Computing System\n\n\nImplemented CUDA kernels for matrix operations; applied shared-memory tiling to minimize global memory latency. Achieved 4× speedup over CPU baseline by optimizing warp divergence, memory coalescing, and occupancy via profiling. Evaluated compute-to-memory ratio to identify and resolve architectural bottlenecks in parallel distribution.\n\n\nC++ CUDA GPU Profiling Parallel Algorithms Memory Optimization\n\n\n\n\nSpark · Hadoop · 2025\n\n\nDistributed Data Processing Framework\n\n\nBuilt distributed Spark workflows (RDD/DataFrame) on multi-million row datasets; optimized joins and partitioning strategies. Reduced job runtime by 30% via shuffle cost analysis; compared SQL/NoSQL performance under heavy workloads. Evaluated scalability and query consistency across increasing data volumes.\n\n\nSpark Hadoop RDD DataFrame SQL NoSQL\n\n\n\n\nMACHINE LEARNING & DATA SCIENCE\n\n\n\n\nPython · Scikit-learn · 2025\n\n\nMachine Learning Pipeline Infrastructure\n\n\nDesigned modular ML workflow covering ingestion, training, and evaluation; implemented regularized models with stratified cross-validation. Improved F1-score by 12% via feature selection and recursive elimination. Conducted bias-variance diagnostics and evaluated ROC/AUC stability across model variants.\n\n\nPython Scikit-learn PyTorch Feature Engineering Cross-Validation\n\n\n\n\nPython · 2025\n\n\nCustom SQL/NoSQL Query Engine\n\n\nDeveloped extensible query engine supporting filter, join, and aggregation operations with modular CSV/JSON parsers. Implemented chunk-based loading architecture reducing peak memory usage by 70% on 1M+ row datasets. Designed modular execution pipeline enabling scalable backend expansion.\n\n\nPython SQL NoSQL Memory Optimization\n\n\n\n\nFULL-STACK & APPLIED AI\n\n\n\n\nFlask · BLE · 2024\n\n\nBeacon-Based Campus Navigation System\n\n\nDeveloped Flask backend and routing algorithms for a BLE-based indoor navigation system serving 200+ students. Reduced location query latency from seconds to milliseconds via database optimization. Designed scalable API endpoints for real-time location queries; deployed for live campus usage.\n\n\nFlask BLE REST API Python Database\n\n\n\n\nAI Systems · Champion · 2024\n\n\nAI-Driven Campus Smart Innovation System\n\n\nLed 48-hour agile development of an AI-driven campus system as part of the Champion team at the 2024 AI Era Campus Smart Innovation Hackathon. Architected and integrated ML components; built working prototype and secured 1st Place by presenting technical design and business value to judges.\n\n\nAI/ML System Design Hackathon 🏆 Champion"
   }
 ]

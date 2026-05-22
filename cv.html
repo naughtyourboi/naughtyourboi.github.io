@@ -23,41 +23,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-html { -webkit-text-size-adjust: 100%; }
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
@@ -74,14 +39,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-d0ae9245876894da5ac7e18953ecc5cc.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-62a0fb827630e33fd95d729094ca943e.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-b7bdb8a837edaaf307ffe49b41388927.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="site_libs/bootstrap/bootstrap-62a0fb827630e33fd95d729094ca943e.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-3e7735b7b22659e5fa437aca0bb49075.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -111,171 +72,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 }</script>
 
 
+<link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
-    const toggleBodyColorMode = (bsSheetEl) => {
-      const mode = bsSheetEl.getAttribute("data-mode");
-      const bodyEl = window.document.querySelector("body");
-      if (mode === "dark") {
-        bodyEl.classList.add("quarto-dark");
-        bodyEl.classList.remove("quarto-light");
-      } else {
-        bodyEl.classList.add("quarto-light");
-        bodyEl.classList.remove("quarto-dark");
-      }
-    }
-    const toggleBodyColorPrimary = () => {
-      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
-      if (bsSheetEl) {
-        toggleBodyColorMode(bsSheetEl);
-      }
-    }
-    const setColorSchemeToggle = (alternate) => {
-      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
-      for (let i=0; i < toggles.length; i++) {
-        const toggle = toggles[i];
-        if (toggle) {
-          if (alternate) {
-            toggle.classList.add("alternate");
-          } else {
-            toggle.classList.remove("alternate");
-          }
-        }
-      }
-    };
-    const toggleColorMode = (alternate) => {
-      // Switch the stylesheets
-      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
-      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
-      manageTransitions('#quarto-margin-sidebar .nav-link', false);
-      if (alternate) {
-        // note: dark is layered on light, we don't disable primary!
-        enableStylesheet(alternateStylesheets);
-        for (const sheetNode of alternateStylesheets) {
-          if (sheetNode.id === "quarto-bootstrap") {
-            toggleBodyColorMode(sheetNode);
-          }
-        }
-      } else {
-        disableStylesheet(alternateStylesheets);
-        enableStylesheet(primaryStylesheets)
-        toggleBodyColorPrimary();
-      }
-      manageTransitions('#quarto-margin-sidebar .nav-link', true);
-      // Switch the toggles
-      setColorSchemeToggle(alternate)
-      // Hack to workaround the fact that safari doesn't
-      // properly recolor the scrollbar when toggling (#1455)
-      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
-        manageTransitions("body", false);
-        window.scrollTo(0, 1);
-        setTimeout(() => {
-          window.scrollTo(0, 0);
-          manageTransitions("body", true);
-        }, 40);
-      }
-    }
-    const disableStylesheet = (stylesheets) => {
-      for (let i=0; i < stylesheets.length; i++) {
-        const stylesheet = stylesheets[i];
-        stylesheet.rel = 'disabled-stylesheet';
-      }
-    }
-    const enableStylesheet = (stylesheets) => {
-      for (let i=0; i < stylesheets.length; i++) {
-        const stylesheet = stylesheets[i];
-        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
-          stylesheet.rel = 'stylesheet';
-        }
-      }
-    }
-    const manageTransitions = (selector, allowTransitions) => {
-      const els = window.document.querySelectorAll(selector);
-      for (let i=0; i < els.length; i++) {
-        const el = els[i];
-        if (allowTransitions) {
-          el.classList.remove('notransition');
-        } else {
-          el.classList.add('notransition');
-        }
-      }
-    }
-    const isFileUrl = () => {
-      return window.location.protocol === 'file:';
-    }
-    const hasAlternateSentinel = () => {
-      let styleSentinel = getColorSchemeSentinel();
-      if (styleSentinel !== null) {
-        return styleSentinel === "alternate";
-      } else {
-        return false;
-      }
-    }
-    const setStyleSentinel = (alternate) => {
-      const value = alternate ? "alternate" : "default";
-      if (!isFileUrl()) {
-        window.localStorage.setItem("quarto-color-scheme", value);
-      } else {
-        localAlternateSentinel = value;
-      }
-    }
-    const getColorSchemeSentinel = () => {
-      if (!isFileUrl()) {
-        const storageValue = window.localStorage.getItem("quarto-color-scheme");
-        return storageValue != null ? storageValue : localAlternateSentinel;
-      } else {
-        return localAlternateSentinel;
-      }
-    }
-    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
-      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
-      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
-      let newTheme = '';
-      if(authorPrefersDark) {
-        newTheme = isAlternate ? baseTheme : alternateTheme;
-      } else {
-        newTheme = isAlternate ? alternateTheme : baseTheme;
-      }
-      const changeGiscusTheme = () => {
-        // From: https://github.com/giscus/giscus/issues/336
-        const sendMessage = (message) => {
-          const iframe = document.querySelector('iframe.giscus-frame');
-          if (!iframe) return;
-          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
-        }
-        sendMessage({
-          setConfig: {
-            theme: newTheme
-          }
-        });
-      }
-      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
-      if (isGiscussLoaded) {
-        changeGiscusTheme();
-      }
-    };
-    const authorPrefersDark = false;
-    const darkModeDefault = authorPrefersDark;
-      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
-      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
-    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
-    // Dark / light mode switch
-    window.quartoToggleColorScheme = () => {
-      // Read the current dark / light value
-      let toAlternate = !hasAlternateSentinel();
-      toggleColorMode(toAlternate);
-      setStyleSentinel(toAlternate);
-      toggleGiscusIfUsed(toAlternate, darkModeDefault);
-      window.dispatchEvent(new Event('resize'));
-    };
-    // Switch to dark mode if need be
-    if (hasAlternateSentinel()) {
-      toggleColorMode(true);
-    } else {
-      toggleColorMode(false);
-    }
-  </script>
+<body class="nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -286,7 +86,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <span class="navbar-title">Eric Tsai</span>
     </a>
   </div>
-            <div id="quarto-search" class="" title="Search"></div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
@@ -294,8 +93,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
     <a class="nav-link" href="./index.html"> 
-<span class="menu-text">Home</span></a>
+<span class="menu-text">Eric Tsai</span></a>
   </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
     <a class="nav-link" href="./projects.html"> 
 <span class="menu-text">Projects</span></a>
@@ -304,11 +105,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <a class="nav-link" href="./notes.html"> 
 <span class="menu-text">Notes</span></a>
   </li>  
-</ul>
-            <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
     <a class="nav-link active" href="./cv.html" aria-current="page"> 
-<span class="menu-text">Resume</span></a>
+<span class="menu-text">CV</span></a>
   </li>  
   <li class="nav-item compact">
     <a class="nav-link" href="https://github.com/naughtyourboi"> <i class="bi bi-github" role="img">
@@ -318,46 +117,292 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
-  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
 </div>
       </div> <!-- /container-fluid -->
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
-    </div>
+    
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"><h1 class="title display-7"></h1></header><div class="quarto-title-block"><div class="quarto-title-tools-only"><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
+<main class="content column-page" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
 
 
 
 
+<div class="cv-page">
+<div class="eyebrow" style="margin-top: 44px;">
+CURRICULUM VITAE
+</div>
+<section id="hsiangyu-eric-tsai" class="level1" style="font-family: Georgia, serif; font-size: clamp(2rem, 5vw, 3.8rem); line-height: 1; margin: 0 0 6px; color: var(--ink);">
+<h1 style="font-family: Georgia, serif; font-size: clamp(2rem, 5vw, 3.8rem); line-height: 1; margin: 0 0 6px; color: var(--ink);">HsiangYu (Eric) Tsai</h1>
+<p style="color: var(--muted); font-size: 0.95rem; margin-bottom: 48px;">
+Los Angeles, CA &nbsp;·&nbsp; <a href="mailto:basstsai2002@gmail.com">basstsai2002@gmail.com</a> &nbsp;·&nbsp; <a href="https://github.com/naughtyourboi" target="_blank">github.com/naughtyourboi</a> &nbsp;·&nbsp; <a href="https://linkedin.com/in/eric1313" target="_blank">linkedin.com/in/eric1313</a>
+</p>
+<hr>
+<div class="cv-section">
+<h2 class="cv-section-title anchored" data-anchor-id="hsiangyu-eric-tsai">
+Education
+</h2>
+<div class="cv-entry">
+<div class="cv-entry-header">
+<div>
+<h3 class="anchored">
+University of Southern California
+</h3>
+<p><span class="cv-org">Master of Applied Data Science</span></p>
+</div>
+<div class="cv-meta">
+<p><span>08/2025 – 05/2027</span> <span>Los Angeles, CA</span></p>
+</div>
+</div>
+<ul>
+<li>
+<strong>Coursework:</strong> Scalable Data Mgmt (Spark, Hadoop), Parallel Computing (C++, CUDA), Applied ML (Scikit-learn, PyTorch), Data Mining
+</li>
+<li>
+Focus on distributed data systems, GPU acceleration, scalable ML pipelines, and performance-aware computation
+</li>
+</ul>
+</div>
+<div class="cv-entry">
+<div class="cv-entry-header">
+<div>
+<h3 class="anchored">
+Soochow University
+</h3>
+<p><span class="cv-org">B.B.A. in Data Science</span></p>
+</div>
+<div class="cv-meta">
+<p><span>09/2021 – 06/2025</span> <span>Taipei, Taiwan</span></p>
+</div>
+</div>
+<ul>
+<li>
+Strong foundation in algorithms, statistics, database systems, and machine learning theory
+</li>
+</ul>
+</div>
+</div>
+<div class="cv-section">
+<h2 class="cv-section-title anchored">
+Skills
+</h2>
+<div class="skills-grid">
+<div class="skill-group">
+<p><strong>Languages</strong> <span>Python, SQL, C/C++, CUDA</span></p>
+</div>
+<div class="skill-group">
+<p><strong>ML &amp; Data</strong> <span>Pandas, NumPy, Scikit-learn, PyTorch, Spark, Hadoop, Feature Engineering</span></p>
+</div>
+<div class="skill-group">
+<p><strong>Systems</strong> <span>Distributed Computing, GPU Programming, Parallel Algorithms, Memory Optimization, Profiling</span></p>
+</div>
+<div class="skill-group">
+<p><strong>Tools</strong> <span>Git, Docker, REST APIs, Linux, Flask</span></p>
+</div>
+</div>
+</div>
+<div class="cv-section">
+<h2 class="cv-section-title anchored">
+Professional Experience
+</h2>
+<div class="cv-entry">
+<div class="cv-entry-header">
+<div>
+<h3 class="anchored">
+AI Systems Developer
+</h3>
+<p><span class="cv-org">Campus Smart Innovation Hackathon — Champion Team</span></p>
+</div>
+<div class="cv-meta">
+<p><span>2024</span></p>
+</div>
+</div>
+<ul>
+<li>
+Led 48-hour agile development of an AI-driven campus system; architected and integrated ML components
+</li>
+<li>
+Built working prototype and secured <strong>1st Place (Champion)</strong> by presenting technical design and business value to judges
+</li>
+<li>
+Coordinated team delivery under tight deadline, ensuring stable end-to-end deployment
+</li>
+</ul>
+</div>
+<div class="cv-entry">
+<div class="cv-entry-header">
+<div>
+<h3 class="anchored">
+Backend &amp; System Developer
+</h3>
+<p><span class="cv-org">Beacon-Based Campus Navigation System</span></p>
+</div>
+<div class="cv-meta">
+<p><span>2024</span></p>
+</div>
+</div>
+<ul>
+<li>
+Developed Flask backend and routing algorithms for BLE navigation system serving <strong>200+ students</strong>
+</li>
+<li>
+Reduced latency from seconds to milliseconds via database optimization; deployed for live campus usage
+</li>
+<li>
+Designed scalable API endpoints for real-time location queries
+</li>
+</ul>
+</div>
+</div>
+<div class="cv-section">
+<h2 class="cv-section-title anchored">
+Selected Projects
+</h2>
+<div class="cv-entry">
+<div class="cv-entry-header">
+<div>
+<h3 class="anchored">
+High-Performance Parallel Computing System
+</h3>
+<p><span class="cv-org">C++ / CUDA</span></p>
+</div>
+<div class="cv-meta">
+<span>2025</span>
+</div>
+</div>
+<ul>
+<li>
+Implemented CUDA kernels for matrix operations; applied shared-memory tiling to minimize global memory latency
+</li>
+<li>
+Achieved <strong>4× speedup</strong> over CPU baseline by optimizing warp divergence, coalescing, and occupancy via profiling
+</li>
+<li>
+Evaluated compute-to-memory ratio to identify and resolve architectural bottlenecks in parallel distribution
+</li>
+</ul>
+</div>
+<div class="cv-entry">
+<div class="cv-entry-header">
+<div>
+<h3 class="anchored">
+Distributed Data Processing Framework
+</h3>
+<p><span class="cv-org">Spark / Hadoop</span></p>
+</div>
+<div class="cv-meta">
+<span>2025</span>
+</div>
+</div>
+<ul>
+<li>
+Built distributed Spark workflows (RDD/DataFrame) on multi-million row datasets; optimized joins and partitioning
+</li>
+<li>
+Reduced job runtime by <strong>30%</strong> via shuffle cost analysis; compared SQL/NoSQL performance under heavy workloads
+</li>
+<li>
+Evaluated scalability and query consistency across increasing data volumes
+</li>
+</ul>
+</div>
+<div class="cv-entry">
+<div class="cv-entry-header">
+<div>
+<h3 class="anchored">
+Machine Learning Pipeline Infrastructure
+</h3>
+<p><span class="cv-org">Python / Scikit-learn</span></p>
+</div>
+<div class="cv-meta">
+<span>2025</span>
+</div>
+</div>
+<ul>
+<li>
+Designed modular ML workflow (ingestion, training, evaluation); implemented regularized models with stratified CV
+</li>
+<li>
+Improved F1-score by <strong>12%</strong> via feature selection and recursive elimination
+</li>
+<li>
+Conducted bias-variance diagnostics and evaluated ROC/AUC stability
+</li>
+</ul>
+</div>
+<div class="cv-entry">
+<div class="cv-entry-header">
+<div>
+<h3 class="anchored">
+Custom SQL/NoSQL Query Engine
+</h3>
+<p><span class="cv-org">Python</span></p>
+</div>
+<div class="cv-meta">
+<span>2025</span>
+</div>
+</div>
+<ul>
+<li>
+Developed extensible query engine supporting filter/join/agg operations with modular CSV/JSON parsers
+</li>
+<li>
+Implemented chunk-based loading architecture reducing peak memory usage by <strong>70%</strong> on 1M+ rows
+</li>
+<li>
+Designed modular execution pipeline enabling scalable backend expansion
+</li>
+</ul>
+</div>
+</div>
+<div class="cv-section">
+<h2 class="cv-section-title anchored">
+Awards &amp; Certifications
+</h2>
+<div class="award-list">
+<div class="award-item">
+<span class="award-icon">🏆</span>
+<div>
+<p><strong>Champion</strong> — AI Era Campus Smart Innovation Hackathon (2024)</p>
+</div>
+</div>
+<div class="award-item">
+<span class="award-icon">🥈</span>
+<div>
+<p><strong>Second Place</strong> — Innovation &amp; Integration Competition (2024)</p>
+</div>
+</div>
+<div class="award-item">
+<span class="award-icon">☁️</span>
+<div>
+<p><strong>Microsoft Azure AI Fundamentals</strong> (AI-900)</p>
+</div>
+</div>
+</div>
+</div>
+<div style="text-align: center; margin-top: 16px; padding-top: 32px; border-top: 1px solid var(--line);">
+<p><a href="mailto:basstsai2002@gmail.com" class="button primary">Get in Touch</a></p>
+</div>
+</section>
+</div>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  document.addEventListener('mousemove', function (e) {
+    document.body.style.setProperty('--cx', e.clientX + 'px');
+    document.body.style.setProperty('--cy', e.clientY + 'px');
+  });
+});
+</script>
 
-
-
-<!-- -->
 
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
-    // Ensure there is a toggle, if there isn't float one in the top right
-    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
-      const a = window.document.createElement('a');
-      a.classList.add('top-right');
-      a.classList.add('quarto-color-scheme-toggle');
-      a.href = "";
-      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
-      const i = window.document.createElement("i");
-      i.classList.add('bi');
-      a.appendChild(i);
-      window.document.body.appendChild(a);
-    }
-    setColorSchemeToggle(hasAlternateSentinel())
     const icon = "";
     const anchorJS = new window.AnchorJS();
     anchorJS.options = {
@@ -426,57 +471,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
         container: window.document.getElementById('quarto-embedded-source-code-modal')
       });
       clipboardModal.on('success', onCopySuccess);
-    }
-    const viewSource = window.document.getElementById('quarto-view-source') ||
-                       window.document.getElementById('quarto-code-tools-source');
-    if (viewSource) {
-      const sourceUrl = viewSource.getAttribute("data-quarto-source-url");
-      viewSource.addEventListener("click", function(e) {
-        if (sourceUrl) {
-          // rstudio viewer pane
-          if (/\bcapabilities=\b/.test(window.location)) {
-            window.open(sourceUrl);
-          } else {
-            window.location.href = sourceUrl;
-          }
-        } else {
-          const modal = new bootstrap.Modal(document.getElementById('quarto-embedded-source-code-modal'));
-          modal.show();
-        }
-        return false;
-      });
-    }
-    function toggleCodeHandler(show) {
-      return function(e) {
-        const detailsSrc = window.document.querySelectorAll(".cell > details > .sourceCode");
-        for (let i=0; i<detailsSrc.length; i++) {
-          const details = detailsSrc[i].parentElement;
-          if (show) {
-            details.open = true;
-          } else {
-            details.removeAttribute("open");
-          }
-        }
-        const cellCodeDivs = window.document.querySelectorAll(".cell > .sourceCode");
-        const fromCls = show ? "hidden" : "unhidden";
-        const toCls = show ? "unhidden" : "hidden";
-        for (let i=0; i<cellCodeDivs.length; i++) {
-          const codeDiv = cellCodeDivs[i];
-          if (codeDiv.classList.contains(fromCls)) {
-            codeDiv.classList.remove(fromCls);
-            codeDiv.classList.add(toCls);
-          } 
-        }
-        return false;
-      }
-    }
-    const hideAllCode = window.document.getElementById("quarto-hide-all-code");
-    if (hideAllCode) {
-      hideAllCode.addEventListener("click", toggleCodeHandler(false));
-    }
-    const showAllCode = window.document.getElementById("quarto-show-all-code");
-    if (showAllCode) {
-      showAllCode.addEventListener("click", toggleCodeHandler(true));
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
@@ -806,9 +800,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       }
     }
   });
-  </script><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
-</div></div></div></div></div>
+  </script>
 </div> <!-- /content -->
 
 
