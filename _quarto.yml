@@ -4,6 +4,7 @@ project:
 website:
   title: "Eric Tsai"
   description: "MS Applied Data Science @ USC | Distributed Systems & ML"
+  site-url: https://naughtyourboi.github.io
 
   navbar:
     search: false
