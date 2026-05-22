@@ -421,7 +421,7 @@ nav.navbar {
 .hero-bio {
     color: var(--muted);
     max-width: 64ch;
-    font-size: 1.04rem;
+    font-size: 1.12rem;
     margin-bottom: 28px;
     line-height: 1.65;
 }
@@ -661,7 +661,7 @@ nav.navbar {
 .section-desc {
     color: rgba(255, 255, 255, 0.72);
     max-width: 62ch;
-    font-size: 1.02rem;
+    font-size: 1.1rem;
     margin: 0;
     text-shadow: 0 1px 8px rgba(0,0,0,0.12);
 }
@@ -716,15 +716,15 @@ nav.navbar {
     margin: 0;
     color: var(--ink);
     font-family: Georgia, "Times New Roman", serif;
-    font-size: 1.22rem;
+    font-size: 1.32rem;
     line-height: 1.22;
     flex-shrink: 0;
 }
 
 .project-card p {
     color: var(--muted);
-    font-size: 0.91rem;
-    line-height: 1.58;
+    font-size: 0.97rem;
+    line-height: 1.62;
     margin: 0;
     flex: 1;
 }
@@ -740,13 +740,13 @@ nav.navbar {
 .tag-badge {
     display: inline-flex;
     align-items: center;
-    min-height: 26px;
-    padding: 0 10px;
+    min-height: 28px;
+    padding: 0 11px;
     border: 1px solid color-mix(in srgb, var(--accent) 22%, var(--line));
     border-radius: 999px;
     color: var(--accent-strong);
     background: color-mix(in srgb, var(--accent) 7%, transparent);
-    font-size: 0.74rem;
+    font-size: 0.8rem;
     font-weight: 700;
 }
 
@@ -1034,7 +1034,7 @@ nav.navbar {
 
 .about-card p {
     color: var(--muted);
-    font-size: 0.96rem;
+    font-size: 1.02rem;
     line-height: 1.7;
     margin: 0;
 }
