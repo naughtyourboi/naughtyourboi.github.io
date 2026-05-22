@@ -400,7 +400,7 @@ function applyTheme(theme) {
   }
 }
 
-document.addEventListener('DOMContentLoaded', function () {
+function initPage() {
   // Init toggle icon based on current theme
   var btn = document.getElementById('theme-toggle');
   var isBlue = document.documentElement.getAttribute('data-theme') === 'blue';
@@ -462,6 +462,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
   window.addEventListener('scroll', updateActiveNav, { passive: true });
   updateActiveNav();
-});
+}
+
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', initPage);
+} else {
+  initPage();
+}
 </script>
 ```
